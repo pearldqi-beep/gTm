@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fonctions de référence – Travail de groupe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    h1 { text-align: center; color: #1a0dab; text-decoration: underline; font-size: 1.4em; }
+    h2 { color: #000; font-size: 1.1em; border-bottom: 1.5px solid #333; padding-bottom: 4px; }
+    .subtitle { text-align: center; color: #e06c00; font-style: italic; font-weight: bold; }
+    .intro { text-align: center; margin: 10px 0 20px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.97em;
+    }
+    th {
+      background: #d0e4f7;
+      padding: 8px 12px;
+      border: 1.5px solid #888;
+      text-align: center;
+      font-size: 1em;
+    }
+    td {
+      padding: 8px 12px;
+      border: 1px solid #aaa;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .graph-cell svg { display: block; margin: auto; }
+    .def-set { font-size: 1.05em; }
+    .note { font-size: 0.85em; color: #555; font-style: italic; }
+    .section { margin: 30px 0 10px 0; }
+    .mindmap-container {
+      display: flex;
+      justify-content: center;
+      margin: 28px 0 10px 0;
+    }
+    .screenshot-label {
+      font-size: 0.78em;
+      color: #666;
+      text-align: center;
+      margin-top: 3px;
+      font-style: italic;
+    }
+    .axis { stroke: #444; stroke-width: 1.2; fill: none; }
+    .curve { stroke-width: 2.2; fill: none; }
+    .grid { stroke: #ddd; stroke-width: 0.7; }
+    .tick { stroke: #555; stroke-width: 1; }
+    .arrowhead { fill: #444; }
+  </style>
+</head>
+<body>
+
+<h1>INTRODUCTION : FONCTIONS DE RÉFÉRENCE</h1>
+<p class="subtitle">Travail par équipe de maximum 3 élèves.</p>
+<p class="intro">Voici les quatre fonctions de référence étudiées en Seconde :</p>
+
+<!-- ===== PARTIE I ===== -->
+<div class="section">
+  <h2>I – Observation et relevé des informations</h2>
+  <p>À l'aide de Géogébra, pour chaque fonction de référence :</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fonction</th>
+        <th>Expression algébrique</th>
+        <th>Ensemble de définition</th>
+        <th>Représentation graphique (Géogébra)</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Fonction carrée -->
+      <tr>
+        <td><strong>Fonction « carrée »</strong></td>
+        <td><em>f</em>(<em>x</em>) = <em>x</em>²</td>
+        <td class="def-set">𝔻<sub><em>f</em></sub> = ℝ<br><span class="note">(tous les réels)</span></td>
+        <td class="graph-cell">
+          <svg width="160" height="140" viewBox="-80 -70 160 140">
+            <!-- grid -->
+            <line class="grid" x1="-75" y1="0" x2="75" y2="0"/>
+            <line class="grid" x1="0" y1="-65" x2="0" y2="65"/>
+            <!-- axes -->
+            <line class="axis" x1="-75" y1="0" x2="72" y2="0"/>
+            <line class="axis" x1="0" y1="65" x2="0" y2="-62"/>
+            <!-- arrowheads -->
+            <polygon class="arrowhead" points="72,0 65,-4 65,4"/>
+            <polygon class="arrowhead" points="0,-62 -4,-55 4,-55"/>
+            <!-- labels -->
+            <text x="74" y="4" font-size="10" fill="#444">x</text>
+            <text x="4" y="-58" font-size="10" fill="#444">y</text>
+            <!-- parabola f(x)=x² scaled: y_px = -x_val^2 * 20, x_px = x_val * 20 -->
+            <polyline class="curve" stroke="#1a7fd4" points="
+              -75,56.25
+              -70,49
+              -60,36
+              -50,25
+              -40,16
+              -30,9
+              -20,4
+              -10,1
+              0,0
+              10,1
+              20,4
+              30,9
+              40,16
+              50,25
+              60,36
+              70,49
+              75,56.25
+            "/>
+            <!-- tick marks -->
+            <line class="tick" x1="20" y1="-3" x2="20" y2="3"/>
+            <text x="18" y="13" font-size="9" fill="#555">1</text>
+            <line class="tick" x1="-3" y1="-20" x2="3" y2="-20"/>
+            <text x="6" y="-17" font-size="9" fill="#555">1</text>
+          </svg>
+          <div class="screenshot-label">Capture Géogébra – f(x) = x²</div>
+        </td>
+      </tr>
+
+      <!-- Fonction cube -->
+      <tr>
+        <td><strong>Fonction « cube »</strong></td>
+        <td><em>g</em>(<em>x</em>) = <em>x</em>³</td>
+        <td class="def-set">𝔻<sub><em>g</em></sub> = ℝ<br><span class="note">(tous les réels)</span></td>
+        <td class="graph-cell">
+          <svg width="160" height="140" viewBox="-80 -70 160 140">
+            <line class="grid" x1="-75" y1="0" x2="75" y2="0"/>
+            <line class="grid" x1="0" y1="-65" x2="0" y2="65"/>
+            <line class="axis" x1="-75" y1="0" x2="72" y2="0"/>
+            <line class="axis" x1="0" y1="65" x2="0" y2="-62"/>
+            <polygon class="arrowhead" points="72,0 65,-4 65,4"/>
+            <polygon class="arrowhead" points="0,-62 -4,-55 4,-55"/>
+            <text x="74" y="4" font-size="10" fill="#444">x</text>
+            <text x="4" y="-58" font-size="10" fill="#444">y</text>
+            <!-- g(x)=x³, scale: x_val in [-3.5,3.5], x_px=x_val*20, y_px=-x_val^3*6 -->
+            <polyline class="curve" stroke="#e05c00" points="
+              -70,42
+              -60,27
+              -50,18.75
+              -40,10.67
+              -30,5.4
+              -20,2
+              -10,0.5
+              0,0
+              10,-0.5
+              20,-2
+              30,-5.4
+              40,-10.67
+              50,-18.75
+              60,-27
+              70,-42
+            "/>
+            <line class="tick" x1="20" y1="-3" x2="20" y2="3"/>
+            <text x="18" y="13" font-size="9" fill="#555">1</text>
+            <line class="tick" x1="-3" y1="-20" x2="3" y2="-20"/>
+            <text x="6" y="-17" font-size="9" fill="#555">1</text>
+          </svg>
+          <div class="screenshot-label">Capture Géogébra – g(x) = x³</div>
+        </td>
+      </tr>
+
+      <!-- Fonction racine carrée -->
+      <tr>
+        <td><strong>Fonction « racine carrée »</strong></td>
+        <td><em>h</em>(<em>x</em>) = √<em>x</em></td>
+        <td class="def-set">𝔻<sub><em>h</em></sub> = [0 ; +∞[ = ℝ⁺<br><span class="note">(réels positifs, 0 inclus)</span></td>
+        <td class="graph-cell">
+          <svg width="160" height="140" viewBox="-80 -70 160 140">
+            <line class="grid" x1="-75" y1="0" x2="75" y2="0"/>
+            <line class="grid" x1="0" y1="-65" x2="0" y2="65"/>
+            <line class="axis" x1="-75" y1="0" x2="72" y2="0"/>
+            <line class="axis" x1="0" y1="65" x2="0" y2="-62"/>
+            <polygon class="arrowhead" points="72,0 65,-4 65,4"/>
+            <polygon class="arrowhead" points="0,-62 -4,-55 4,-55"/>
+            <text x="74" y="4" font-size="10" fill="#444">x</text>
+            <text x="4" y="-58" font-size="10" fill="#444">y</text>
+            <!-- h(x)=sqrt(x), x>=0, x_px=x_val*10, y_px=-sqrt(x_val)*20 -->
+            <polyline class="curve" stroke="#2aaa44" points="
+              0,0
+              10,-20
+              20,-28.28
+              30,-34.64
+              40,-40
+              50,-44.72
+              60,-48.99
+              70,-52.92
+            "/>
+            <line class="tick" x1="20" y1="-3" x2="20" y2="3"/>
+            <text x="18" y="13" font-size="9" fill="#555">2</text>
+            <line class="tick" x1="-3" y1="-20" x2="3" y2="-20"/>
+            <text x="6" y="-17" font-size="9" fill="#555">1</text>
+          </svg>
+          <div class="screenshot-label">Capture Géogébra – h(x) = √x</div>
+        </td>
+      </tr>
+
+      <!-- Fonction inverse -->
+      <tr>
+        <td><strong>Fonction « inverse »</strong></td>
+        <td><em>k</em>(<em>x</em>) = 1/<em>x</em></td>
+        <td class="def-set">𝔻<sub><em>k</em></sub> = ℝ* = ]−∞ ; 0[ ∪ ]0 ; +∞[<br><span class="note">(tous les réels sauf 0)</span></td>
+        <td class="graph-cell">
+          <svg width="160" height="140" viewBox="-80 -70 160 140">
+            <line class="grid" x1="-75" y1="0" x2="75" y2="0"/>
+            <line class="grid" x1="0" y1="-65" x2="0" y2="65"/>
+            <line class="axis" x1="-75" y1="0" x2="72" y2="0"/>
+            <line class="axis" x1="0" y1="65" x2="0" y2="-62"/>
+            <polygon class="arrowhead" points="72,0 65,-4 65,4"/>
+            <polygon class="arrowhead" points="0,-62 -4,-55 4,-55"/>
+            <text x="74" y="4" font-size="10" fill="#444">x</text>
+            <text x="4" y="-58" font-size="10" fill="#444">y</text>
+            <!-- k(x)=1/x, x_px=x_val*15, y_px=-(1/x_val)*15 -->
+            <!-- branche x > 0 -->
+            <polyline class="curve" stroke="#9b27af" points="
+              5,-60
+              8,-37.5
+              10,-30
+              15,-20
+              20,-15
+              30,-10
+              40,-7.5
+              60,-5
+              75,-4
+            "/>
+            <!-- branche x < 0 -->
+            <polyline class="curve" stroke="#9b27af" points="
+              -5,60
+              -8,37.5
+              -10,30
+              -15,20
+              -20,15
+              -30,10
+              -40,7.5
+              -60,5
+              -75,4
+            "/>
+            <line class="tick" x1="15" y1="-3" x2="15" y2="3"/>
+            <text x="13" y="13" font-size="9" fill="#555">1</text>
+            <line class="tick" x1="-3" y1="-15" x2="3" y2="-15"/>
+            <text x="6" y="-12" font-size="9" fill="#555">1</text>
+          </svg>
+          <div class="screenshot-label">Capture Géogébra – k(x) = 1/x</div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== PARTIE II : XMind ===== -->
+<div class="section">
+  <h2>II – Télécharger XMind</h2>
+  <p>XMind a été téléchargé et installé depuis le site officiel.</p>
+</div>
+
+<!-- ===== PARTIE III : Carte mentale ===== -->
+<div class="section">
+  <h2>III – Carte mentale</h2>
+  <p>Voici la carte mentale réalisée avec XMind :</p>
+
+  <div class="mindmap-container">
+    <svg width="820" height="560" viewBox="0 0 820 560" font-family="Arial, sans-serif">
+
+      <!-- ===== CENTRE ===== -->
+      <rect x="310" y="240" width="200" height="60" rx="30" fill="#e63946" stroke="#c1121f" stroke-width="2"/>
+      <text x="410" y="265" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Fonctions</text>
+      <text x="410" y="283" text-anchor="middle" font-size="14" font-weight="bold" fill="white">de référence</text>
+
+      <!-- ===== BRANCHE 1 : Fonction carrée (haut gauche) ===== -->
+      <!-- connector -->
+      <path d="M330 245 Q230 180 190 160" stroke="#1a7fd4" stroke-width="2" fill="none"/>
+      <!-- boîte fonction -->
+      <rect x="90" y="120" width="200" height="44" rx="14" fill="#d0e8fb" stroke="#1a7fd4" stroke-width="1.8"/>
+      <text x="190" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a7fd4">Fonction « carrée »</text>
+      <text x="190" y="155" text-anchor="middle" font-size="11" fill="#1a7fd4">f(x) = x²</text>
+      <!-- sous-branches -->
+      <line x1="190" y1="164" x2="110" y2="196" stroke="#1a7fd4" stroke-width="1.2"/>
+      <rect x="30" y="194" width="160" height="24" rx="8" fill="#eaf4fd" stroke="#1a7fd4" stroke-width="1"/>
+      <text x="110" y="210" text-anchor="middle" font-size="10" fill="#333">𝔻<tspan font-style="italic">f</tspan> = ℝ  (tous les réels)</text>
+
+      <line x1="190" y1="164" x2="260" y2="196" stroke="#1a7fd4" stroke-width="1.2"/>
+      <rect x="200" y="194" width="130" height="24" rx="8" fill="#eaf4fd" stroke="#1a7fd4" stroke-width="1"/>
+      <text x="265" y="210" text-anchor="middle" font-size="10" fill="#333">Parabole ∪</text>
+
+      <!-- ===== BRANCHE 2 : Fonction cube (haut droite) ===== -->
+      <path d="M490 245 Q580 180 620 160" stroke="#e05c00" stroke-width="2" fill="none"/>
+      <rect x="530" y="120" width="200" height="44" rx="14" fill="#fde8d0" stroke="#e05c00" stroke-width="1.8"/>
+      <text x="630" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#e05c00">Fonction « cube »</text>
+      <text x="630" y="155" text-anchor="middle" font-size="11" fill="#e05c00">g(x) = x³</text>
+
+      <line x1="630" y1="164" x2="560" y2="196" stroke="#e05c00" stroke-width="1.2"/>
+      <rect x="470" y="194" width="170" height="24" rx="8" fill="#fdf3ea" stroke="#e05c00" stroke-width="1"/>
+      <text x="555" y="210" text-anchor="middle" font-size="10" fill="#333">𝔻<tspan font-style="italic">g</tspan> = ℝ  (tous les réels)</text>
+
+      <line x1="630" y1="164" x2="690" y2="196" stroke="#e05c00" stroke-width="1.2"/>
+      <rect x="640" y="194" width="130" height="24" rx="8" fill="#fdf3ea" stroke="#e05c00" stroke-width="1"/>
+      <text x="705" y="210" text-anchor="middle" font-size="10" fill="#333">Courbe en « S »</text>
+
+      <!-- ===== BRANCHE 3 : Fonction racine (bas gauche) ===== -->
+      <path d="M330 298 Q230 360 190 390" stroke="#2aaa44" stroke-width="2" fill="none"/>
+      <rect x="90" y="378" width="200" height="44" rx="14" fill="#d4f5dc" stroke="#2aaa44" stroke-width="1.8"/>
+      <text x="190" y="396" text-anchor="middle" font-size="12" font-weight="bold" fill="#2aaa44">Fonction « racine »</text>
+      <text x="190" y="413" text-anchor="middle" font-size="11" fill="#2aaa44">h(x) = √x</text>
+
+      <line x1="190" y1="422" x2="110" y2="454" stroke="#2aaa44" stroke-width="1.2"/>
+      <rect x="20" y="452" width="180" height="24" rx="8" fill="#edfaef" stroke="#2aaa44" stroke-width="1"/>
+      <text x="110" y="468" text-anchor="middle" font-size="10" fill="#333">𝔻<tspan font-style="italic">h</tspan> = [0 ; +∞[  = ℝ⁺</text>
+
+      <line x1="190" y1="422" x2="260" y2="454" stroke="#2aaa44" stroke-width="1.2"/>
+      <rect x="205" y="452" width="120" height="24" rx="8" fill="#edfaef" stroke="#2aaa44" stroke-width="1"/>
+      <text x="265" y="468" text-anchor="middle" font-size="10" fill="#333">Demi-parabole</text>
+
+      <!-- ===== BRANCHE 4 : Fonction inverse (bas droite) ===== -->
+      <path d="M490 298 Q580 360 620 390" stroke="#9b27af" stroke-width="2" fill="none"/>
+      <rect x="530" y="378" width="200" height="44" rx="14" fill="#f3d8f9" stroke="#9b27af" stroke-width="1.8"/>
+      <text x="630" y="396" text-anchor="middle" font-size="12" font-weight="bold" fill="#9b27af">Fonction « inverse »</text>
+      <text x="630" y="413" text-anchor="middle" font-size="11" fill="#9b27af">k(x) = 1/x</text>
+
+      <line x1="630" y1="422" x2="560" y2="454" stroke="#9b27af" stroke-width="1.2"/>
+      <rect x="455" y="452" width="200" height="24" rx="8" fill="#faeffe" stroke="#9b27af" stroke-width="1"/>
+      <text x="555" y="468" text-anchor="middle" font-size="10" fill="#333">𝔻<tspan font-style="italic">k</tspan> = ℝ* (tout sauf 0)</text>
+
+      <line x1="630" y1="422" x2="690" y2="454" stroke="#9b27af" stroke-width="1.2"/>
+      <rect x="648" y="452" width="130" height="24" rx="8" fill="#faeffe" stroke="#9b27af" stroke-width="1"/>
+      <text x="713" y="468" text-anchor="middle" font-size="10" fill="#333">Hyperbole</text>
+
+      <!-- légende -->
+      <text x="410" y="540" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Carte mentale réalisée avec XMind – Fonctions de référence – Seconde</text>
+    </svg>
+  </div>
+
+  <p style="font-size:0.9em; color:#444;">
+    <strong>Remarques :</strong><br>
+    – La fonction carrée et la fonction cube ont pour ensemble de définition ℝ car elles sont définies pour tout réel.<br>
+    – La fonction racine carrée n'est définie que pour les réels positifs (on ne peut pas prendre la racine d'un nombre négatif).<br>
+    – La fonction inverse n'est pas définie en 0 (division par zéro impossible).
+  </p>
+</div>
+
+<hr style="margin:40px 0 15px 0; border: none; border-top: 1px solid #ccc;"/>
+<p style="font-size:0.82em; color:#888; text-align:right;">Travail rendu le mardi 21 avril 2026.</p>
+
+</body>
+</html>
