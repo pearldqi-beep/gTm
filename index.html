@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yalc — Lead Review Table</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   /* ── Reset & Tokens ── */
   :root {
@@ -38,7 +35,7 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     background: var(--bg);
     color: var(--text-primary);
     height: 100vh;
@@ -89,7 +86,7 @@
     gap: 6px;
     color: var(--text-muted);
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
@@ -101,7 +98,7 @@
   .back-link svg { flex-shrink: 0; }
 
   .table-name {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -111,7 +108,7 @@
   .row-badge {
     background: var(--blueberry-bg);
     color: var(--blueberry);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 11px;
     font-weight: 700;
     padding: 4px 12px;
@@ -124,7 +121,7 @@
     border: none;
     padding: 12px 28px;
     border-radius: 10px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
@@ -145,7 +142,7 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 13px;
     font-weight: 500;
     color: var(--text-secondary);
@@ -202,7 +199,7 @@
     gap: 6px;
     padding: 8px 16px;
     border-radius: 3px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 12px;
     font-weight: 500;
     border: 1px solid var(--border);
@@ -260,7 +257,7 @@
     border: 1px solid var(--border);
     background: var(--white);
     color: var(--text-muted);
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
@@ -283,7 +280,7 @@
     color: var(--white);
     padding: 12px 16px;
     border-radius: 8px;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 12px;
     white-space: nowrap;
     z-index: 50;
@@ -305,7 +302,7 @@
     border: 1px solid rgba(255,255,255,0.25);
     border-radius: 3px;
     padding: 1px 6px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 11px;
     margin: 0 2px;
   }
@@ -327,7 +324,7 @@
     padding: 10px 16px 10px 36px;
     border-radius: 10px;
     border: 1px solid var(--border);
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 13px;
     background: var(--white);
     color: var(--text-primary);
@@ -364,7 +361,7 @@
   thead th {
     background: var(--bg);
     padding: 10px 16px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -411,7 +408,7 @@
 
   tbody td.td-right {
     text-align: right;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-variant-numeric: tabular-nums;
   }
 
@@ -447,7 +444,7 @@
 
   /* ── Cell types ── */
   .cell-company {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-weight: 700;
     font-size: 13px;
   }
@@ -468,7 +465,7 @@
     padding: 3px 10px;
     border-radius: 3px;
     font-size: 11px;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-weight: 600;
   }
   .badge-fintech { background: var(--matcha-bg); color: var(--matcha); }
@@ -487,11 +484,11 @@
   .cell-email {
     font-size: 12px;
     color: var(--text-secondary);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
   }
 
   .cell-employees {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-variant-numeric: tabular-nums;
   }
 
@@ -503,7 +500,7 @@
   }
 
   .score-label {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 13px;
     font-weight: 700;
     font-variant-numeric: tabular-nums;
@@ -529,7 +526,7 @@
   /* ── Row index ── */
   .row-index {
     color: var(--text-muted);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 11px;
     font-variant-numeric: tabular-nums;
   }
@@ -624,7 +621,7 @@
     flex: 1;
     padding: 12px 0;
     border: none;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: var(--text-primary);
     background: transparent;
@@ -649,7 +646,7 @@
   .chat-send svg { stroke: var(--white); }
 
   .chat-context {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 11px;
     color: var(--text-muted);
     text-align: center;
@@ -668,7 +665,7 @@
     border-radius: 3px;
     border: 1px solid var(--border);
     background: var(--white);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 11px;
     font-weight: 600;
     color: var(--blueberry);
@@ -719,14 +716,14 @@
   }
 
   .signal-panel-title {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 15px;
     font-weight: 700;
     color: var(--text-primary);
   }
 
   .signal-panel-subtitle {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: var(--text-muted);
     margin-top: 2px;
@@ -760,14 +757,14 @@
   }
 
   .signal-panel-score-num {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 32px;
     font-weight: 700;
     line-height: 1;
   }
 
   .signal-panel-score-label {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 13px;
     color: var(--text-secondary);
   }
@@ -814,7 +811,7 @@
   .signal-card-content { flex: 1; min-width: 0; }
 
   .signal-card-type {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -824,14 +821,14 @@
   }
 
   .signal-card-text {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 13px;
     color: var(--text-primary);
     line-height: 1.5;
   }
 
   .signal-card-weight {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 13px;
     font-weight: 700;
     white-space: nowrap;
@@ -842,7 +839,7 @@
   .signal-weight-negative { color: var(--pomegranate); }
 
   .signal-section-label {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -888,7 +885,7 @@
   .overlay-icon svg { stroke: var(--matcha); }
 
   .overlay-title {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
@@ -896,7 +893,7 @@
   }
 
   .overlay-text {
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: var(--text-secondary);
     line-height: 1.6;
@@ -909,7 +906,7 @@
     border: none;
     padding: 12px 32px;
     border-radius: 10px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Courier New', Courier, ui-monospace, monospace;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
